@@ -1,0 +1,21 @@
+# como instalar fontes microsoft no linux
+
+PT: Essas fontes estão disponíveis nos repositórios multiverse. Normalmente, eles estão habilitados por padrão, mas você deve certificar-se de que estejam habilitados:
+ENG: These fonts are available in the multiverse repositories. Usually, they are enabled by default, but you should make sure it is enabled:
+1. sudo add-apt-repository multiverse
+
+ENG:After that, you can update your Ubuntu repository cache and install the Microsoft fonts like this:
+PT: Depois disso, você pode atualizar o cache do repositório Ubuntu e instalar as fontes da Microsoft assim:
+2.sudo apt update && sudo apt install ttf-mscorefonts-installer
+
+4. ENG: Press the tab to select OK and press Enter when Microsoft’s End user agreement appears.
+PT: Pressione a guia para selecionar <OK> e pressione Enter quando o contrato do usuário final da Microsoft aparecer.
+
+5. ENG: Click <Yes> to accept Microsoft’s agreement: YES   NO
+PT:Clique em <Sim> para aceitar o acordo da Microsoft: SIM  NAO
+
+ENG: When the installation is done, you should update the font cache using the command below:
+PT: Quando a instalação estiver concluída, você deve atualizar o cache de fontes usando o comando abaixo:
+6.sudo fc-cache -f -v
+
+TESTADO EM XUBUNTU OS-POR JLB-101
